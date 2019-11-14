@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="不积跬步无以至千里，实践出真知  储备知识struct 结构体结构体基本定义方式： 12345struct struct_name&#x2F;&#x2F;结构体名&amp;#123;  type_name var_name;&#x2F;&#x2F;结构体成员变量  ...&amp;#125;;  注意：结构体大括号后面的分号是必须的，整个结构体是一条语句！！ 结构体变量的声明方式： 12345struct struct_name&amp;#123; ...">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-14T17:30:27.685Z">
+<meta property="og:updated_time" content="2019-11-14T17:35:56.118Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -105,7 +105,8 @@
 
 <p>该语句在定义结构体的同时给这个结构体起了一个别名：<code>myStruct</code>，这意味着在之后的代码中可以像使用普通变量类型名一样声明结构体：<code>myStruct var_name</code>，这句等同于：<code>struct struct_name varname</code></p>
 <p><strong>注意！</strong>此处的<code>mystruct</code>虽然也是在大括号的后面，但是和上面在定义结构体同时声明结构体类型变量的<code>var_name1</code>不同，前者是自创的类型名，需要用该类型名声明变量，后者是变量名，可以直接使用。</p>
-<h2 id="typedef的使用"><a href="#typedef的使用" class="headerlink" title="typedef的使用"></a>typedef的使用</h2><figure class="highlight plain"><figcaption><span>oldname new name```是最基本的用法， ```oldname```为已有的类型名，如```int char char[]```等，```newname```为自行命名，为了代码的可读性，可以给一些已有的类型进行命名，如</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```c</span><br><span class="line">typedef int myData;//此语句给int类型赋予了myData的新名字，在程序中可以用和int一样的用法使用myData</span><br></pre></td></tr></table></figure>
+<h2 id="typedef的使用"><a href="#typedef的使用" class="headerlink" title="typedef的使用"></a>typedef的使用</h2><p><code>typedef oldname new name</code>是最基本的用法， <code>oldname</code>为已有的类型名，如<code>int char char[]</code>等，<code>newname</code>为自行命名，为了代码的可读性，可以给一些已有的类型进行命名，如</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> myData;<span class="comment">//此语句给int类型赋予了myData的新名字，在程序中可以用和int一样的用法使用myData</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -125,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/14/%E5%82%A8%E5%A4%87%E7%9F%A5%E8%AF%86%E7%82%B9/" data-id="ck2yzqld60001mwjhdolvd683" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/14/%E5%82%A8%E5%A4%87%E7%9F%A5%E8%AF%86%E7%82%B9/" data-id="ck2yzxnqf00029kjh7601aoj0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/" rel="tag">知识储备</a></li></ul>
